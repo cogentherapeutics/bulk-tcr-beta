@@ -1,7 +1,7 @@
 # bulk-tcr-beta
 Bulk TCR-beta chain sequencing workflow - with DNA as starting material
 
-# Notion page for detailed documentation
+### Notion page for detailed documentation
 https://www.notion.so/cogen/Running-Bulk-TCR-Sequencing-pipeline-for-translational-lab-members-5bb8a7eb89b04ea68ab601a8e8c7bbab
 
 This includes below steps and scripts
