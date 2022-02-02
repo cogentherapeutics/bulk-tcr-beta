@@ -29,6 +29,9 @@ Output files for VDJTools:
 
 ```
 
+<img width="692" alt="image" src="https://user-images.githubusercontent.com/13784114/152161243-f1e5e77e-8f79-457c-9d98-cd6eabe4b3e9.png">
+
+
 ## Inputs
 
 1) SAMPLSHEET1
