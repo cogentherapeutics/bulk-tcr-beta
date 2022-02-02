@@ -1,9 +1,16 @@
 #!/bin/bash
+
+OUTDIR="outputs"
+SAMPLESHEET1="inputs/samplesheet_EXP21001376.tsv"
+
+###Edit above block to configure appropiate paths
+
+
 while read -r SAMPLE FASTQ1 FASTQ2 REST; do
    echo "Working on --> "$SAMPLE
-   mkdir -p ../outputs/${SAMPLE}
+   mkdir -p ${OUTDIR}/${SAMPLE}
     
-		mixcr analyze amplicon \
+   mixcr analyze amplicon \
      --verbose \
      --species hsa \
      --starting-material dna \
@@ -13,6 +20,6 @@ while read -r SAMPLE FASTQ1 FASTQ2 REST; do
      --receptor-type trb \
      --region-of-interest CDR3 \
      --only-productive \
-     ${FASTQ1} ${FASTQ2} ../outputs/${SAMPLE}/${SAMPLE}analysis
+     ${FASTQ1} ${FASTQ2} ${OUTDIR}/${SAMPLE}/${SAMPLE}analysis
 
-done < ../inputs/samplesheet_EXP21001376.tsv
+done < $SAMPLESHEET1
