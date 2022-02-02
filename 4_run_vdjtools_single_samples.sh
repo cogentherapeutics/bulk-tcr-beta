@@ -28,3 +28,13 @@ while read -r file_name sample_name REST; do
      vdjtools PlotQuantileStats VDJtools.${sample_name}.txt ${sample_name}
 
  done < <(tail -n +2 $metadataToConvert)
+
+## Diversity Estimation - all samples - runs outside the loop
+     vdjtools RarefactionPlot -m ${metadata} Rarefaction
+
+ ## Repertoire Overlap - all samples - runs outside the loop
+     vdjtools CalcPairwiseDistances -p -m ${metadata} PairDist
+     vdjtools ClusterSamples -p Pairwise Cluster
+     vdjtools TestClusters Cluster TestClusters
+     vdjtools TrackClonotypes -p -m ${metadata} TrackCl
+     vdjtools JoinSamples -p -m ${metadata} JoinSmp
