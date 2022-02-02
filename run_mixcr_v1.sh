@@ -3,7 +3,8 @@
 OUTDIR="outputs"
 SAMPLESHEET1="inputs/samplesheet_EXP21001376.tsv"
 
-###Edit above block to configure appropiate paths
+##Edit block above to point to appropriate paths
+#---------------------------------------------------------------------------
 
 
 while read -r SAMPLE FASTQ1 FASTQ2 REST; do
