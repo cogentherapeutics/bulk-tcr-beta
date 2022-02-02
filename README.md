@@ -12,7 +12,7 @@ This includes below steps and scripts
 
 Currently fastp, multiqc, mixcr and vdjtools are installed on the galaxy server
 
-Inputs
+##Inputs
 
 1) SAMPLSHEET1
 create a tab delimited samplesheet per experiment for input to mixcr as below e.g.samplesheet_EXP21001293.tsv. No headers. Specifiy complete paths to the fastq files
@@ -34,4 +34,30 @@ Create another tab delimited samplesheet for preovide mixcr outputs as input to 
 	DSCO28-TRF-1analysis.clonotypes.TRB.fixed.txt	DSCO28-TRF-1
 	DSCO28-TRF-2analysis.clonotypes.TRB.fixed.txt	DSCO28-TRF-2
 	DSCO28-TRF-3analysis.clonotypes.TRB.fixed.txt	DSCO28-TRF-3
-	FFPE-9G7045analysis.clonotypes.TRB.fixed.txt	FFPE-9G7045```
+	FFPE-9G7045analysis.clonotypes.TRB.fixed.txt	FFPE-9G7045
+```
+
+##Outputs
+
+1) Make sure a file called metadata.txt gets automatically created by VDJtools, looks like below
+```file_name	sample_id	..filter..
+VDJtools.HNSCC-15396-1.txt	HNSCC-15396-1	conv:MiXcr
+VDJtools.HNSCC-15396-2.txt	HNSCC-15396-2	conv:MiXcr
+VDJtools.HNSCC-15396-3.txt	HNSCC-15396-3	conv:MiXcr
+VDJtools.HNSCC-6827-1.txt	HNSCC-6827-1	conv:MiXcr
+VDJtools.HNSCC-6827-2.txt	HNSCC-6827-2	conv:MiXcr
+VDJtools.HNSCC-6827-3.txt	HNSCC-6827-3	conv:MiXcr
+```
+
+2) mixcr
+
+1. *.TRB.txt
+2. *.clna
+3. *.vdjca
+
+3) vdjtools (depending on the type of plots, read more in vdjtools documentation)
+
+1. *.pdf
+2. *.summary.txt
+3. *.txt
+4. metadata.txt
