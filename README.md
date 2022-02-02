@@ -10,7 +10,16 @@ This includes below steps and scripts
 2) mixcr - alignment and assembly of clonotypes from fastq files: `run_mixcr_v1.sh`, `fix_TRBfiles.R`
 3) vdjtools - postprocessing/graphical and text file results for interpretation: `run_vdjtools_single_samples.sh`, `run_vdjtools_custom_samples.sh`, `vdjtools-patch.sh`
 
-Currently fastp, multiqc, mixcr and vdjtools are installed on the galaxy server
+Currently fastp, multiqc, mixcr and vdjtools are installed on the galaxy server. 
+INFO for a test run:
+Test data:
+`~schavan/projects/bulk_tcr_seq/data/EXP21001376_FFPE`
+Input files:
+```~schavan/projects/bulk_tcr_seq/inputs/samplesheet_EXP21001376.tsv
+~schavan/projects/bulk_tcr_seq/inputs/metadataToConvert_EXP21001376_FFPE.txt
+```
+Output files for VDJTools:
+`~schavan/projects/bulk_tcr_seq/scripts/batch2.2`
 
 ## Inputs
 
