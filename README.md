@@ -21,8 +21,12 @@ Input files:
 ~schavan/projects/bulk_tcr_seq/inputs/samplesheet_EXP21001376.tsv
 ~schavan/projects/bulk_tcr_seq/inputs/metadataToConvert_EXP21001376_FFPE.txt
 
+Output files for Mixcr:
+~schavan/projects/bulk_tcr_seq/inputs/
+
 Output files for VDJTools:
 ~schavan/projects/bulk_tcr_seq/scripts/batch2.2
+
 ```
 
 ## Inputs
