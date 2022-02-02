@@ -1,0 +1,5 @@
+file_name	sample_id
+amp1.clonotypes.TRB.txt	amp1
+amp2.clonotypes.TRB.txt	amp2
+neb1.clonotypes.TRB.txt	neb1
+neb2.clonotypes.TRB.txt	neb2
