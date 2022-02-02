@@ -6,7 +6,7 @@ https://www.notion.so/cogen/Running-Bulk-TCR-Sequencing-pipeline-for-translation
 
 This includes 3 scripts
 
-1) fastp - QC and pre-processing of fastq files/ multiqc to create a multisample report
+1) fastp - QC and pre-processing of fastq files/ multiqc to create a multisample report: run_fastp.sh
 2) mixcr - alignment and assembly of clonotypes from fastq files
 3) vdjtools - postprocessing/graphical and text file results for interpretation
 
