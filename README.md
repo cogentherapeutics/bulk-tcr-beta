@@ -4,11 +4,11 @@ Bulk TCR-beta chain sequencing workflow - with DNA as starting material
 # Notion page for detailed documentation
 https://www.notion.so/cogen/Running-Bulk-TCR-Sequencing-pipeline-for-translational-lab-members-5bb8a7eb89b04ea68ab601a8e8c7bbab
 
-This includes 3 scripts
+This includes below steps and scripts
 
-1) fastp - QC and pre-processing of fastq files/ multiqc to create a multisample report: run_fastp_multiqc.sh
-2) mixcr - alignment and assembly of clonotypes from fastq files: 
-3) vdjtools - postprocessing/graphical and text file results for interpretation
+1) fastp - QC and pre-processing of fastq files/ multiqc to create a multisample report: `run_fastp_multiqc.sh`
+2) mixcr - alignment and assembly of clonotypes from fastq files: `run_mixcr_v1.sh`, `fix_TRBfiles.R`
+3) vdjtools - postprocessing/graphical and text file results for interpretation: `run_vdjtools_single_samples.sh`, `run_vdjtools_custom_samples.sh`, `vdjtools-patch.sh`
 
 Currently fastp, multiqc, mixcr and vdjtools are installed on the galaxy server
 
