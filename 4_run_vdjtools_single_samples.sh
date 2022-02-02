@@ -4,6 +4,7 @@
 
 metadataToConvert='/home/schavan/projects/bulk_tcr_seq/inputs/metadataToConvert_EXP21001376_FFPE.txt'
 metadata='metadata.txt' #automatically created by vdjtools by below code
+
 ##Edit block above to point to appropriate paths
 #---------------------------------------------------------------------------
 
