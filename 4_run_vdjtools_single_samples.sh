@@ -4,6 +4,8 @@
 
 metadataToConvert='/home/schavan/projects/bulk_tcr_seq/inputs/metadataToConvert_EXP21001376_FFPE.txt'
 metadata='metadata.txt' #automatically created by vdjtools by below code
+##Edit block above to point to appropriate paths
+#---------------------------------------------------------------------------
 
 while read -r file_name sample_name REST; do
 
@@ -18,7 +20,7 @@ while read -r file_name sample_name REST; do
      vdjtools CalcSpectratype -m ${metadata} ${sample_name}
 
  ## Basic plots without using metadata file
-     vdjtools PlotFancySpectratype VDJtools.${sample_name}.txt ${sample_name}
+     ./vdjtools-patch.sh vdjtools PlotFancySpectratype VDJtools.${sample_name}.txt ${sample_name}
      ./vdjtools-patch.sh vdjtools PlotFancyVJUsage VDJtools.${sample_name}.txt ${sample_name}
      vdjtools PlotSpectratypeV VDJtools.${sample_name}.txt ${sample_name}
 
