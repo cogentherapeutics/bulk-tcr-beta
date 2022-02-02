@@ -14,7 +14,7 @@ Currently fastp, multiqc, mixcr and vdjtools are installed on the galaxy server
 
 Inputs
 
-1) create a tab delimited samplesheet per experiment for mixcr as below e.g.samplesheet_EXP21001293.tsv
+1) create a tab delimited samplesheet per experiment for mixcr as below e.g.samplesheet_EXP21001293.tsv. No headers. Specifiy complete paths to the fastq files
 ```
 DSCO28-MTC-1    ../data/DSCO28-MTC-1_S7_L001_R1_001.fastq.gz    ../data/DSCO28-MTC-1_S7_L001_R2_001.fastq.gz
 DSCO28-MTC-2    ../data/DSCO28-MTC-2_S1_L001_R1_001.fastq.gz    ../data/DSCO28-MTC-2_S1_L001_R2_001.fastq.gz
