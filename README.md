@@ -64,26 +64,26 @@ VDJtools.HNSCC-6827-3.txt	HNSCC-6827-3	conv:MiXcr
 
 ## Setting up your own user conda environment
 
-###Step1 ### Logon to Galaxy server and then issue the below commands:
-conda create --name tcrbeta
+1) Logon to Galaxy server and then issue the below commands:
+```conda create --name tcrbeta
 conda activate tcrbeta
+```
+The above creates and activates a conda environment called "tcrbeta" for you, then you can install R libaries using conda install commands for specific R libraries like ggplot etc inside this "tcrbeta" so that this setup remains specific to tcrseq only and does not ever conflict with anything else you might use your bash for.
 
-###Step2 ### The above creates and activates a conda environment called "tcrbeta" for you, then you can install R libaries using conda install commands for specific R libraries like ggplot etc inside this "tcrbeta" so that this setup remains specific to tcrseq only and does not ever conflict with anything else you might use your bash for###
-
-###Step3 ### #The version that I've is R 4.0.5
-#Install R
-conda install -c conda-forge r-base
-
-###Step4 ### #Install R libraries
-conda install -c conda-forge r-ggplot2
+2) Install R/The version that I've is R 4.0.5
+```conda install -c conda-forge r-base
+```
+3) Install R libraries
+```conda install -c conda-forge r-ggplot2
 conda install -c conda-forge r-gplots
 conda install -c conda-forge r-rcolorbrewer
 conda install -c conda-forge r-VennDiagram
 conda install -c conda-forge r-reshape2
 conda install -c conda-forge r-ape
 conda install -c conda-forge r-plotrix
+```
 
-###Step4 - alternative ### #Install any missing R library in the above way. And, if you cannot find any library with channel conda-forge, try channel "-c bioconda" instead of "-c conda-forge"
+Install any missing R library in the above way. And, if you cannot find any library with channel conda-forge, try channel "-c bioconda" instead of "-c conda-forge"
 
 For more understadning read:
 Overall for more understanding read 
