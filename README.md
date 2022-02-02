@@ -10,7 +10,8 @@ This includes below steps and scripts
 2) mixcr - alignment and assembly of clonotypes from fastq files: `run_mixcr_v1.sh`, `fix_TRBfiles.R`
 3) vdjtools - postprocessing/graphical and text file results for interpretation: `run_vdjtools_single_samples.sh`, `run_vdjtools_custom_samples.sh`, `vdjtools-patch.sh`
 
-Currently fastp, multiqc, mixcr and vdjtools are installed on the galaxy server. 
+Currently fastp, multiqc, mixcr and vdjtools are installed on the galaxy server. But do install fastQC for your user.
+`conda install -c bioconda fastqc`
 
 INFO for a test run:
 ```
@@ -87,16 +88,19 @@ VDJtools.HNSCC-6827-3.txt	HNSCC-6827-3	conv:MiXcr
 ## Setting up your own user conda environment
 
 1) Logon to Galaxy server and then issue the below commands:
-```conda create --name tcrbeta
+```
+conda create --name tcrbeta
 conda activate tcrbeta
 ```
 The above creates and activates a conda environment called "tcrbeta" for you, then you can install R libaries using conda install commands for specific R libraries like ggplot etc inside this "tcrbeta" so that this setup remains specific to tcrseq only and does not ever conflict with anything else you might use your bash for.
 
 2) Install R/The version that I've is R 4.0.5
-```conda install -c conda-forge r-base
+```
+conda install -c conda-forge r-base
 ```
 3) Install R libraries
-```conda install -c conda-forge r-ggplot2
+```
+conda install -c conda-forge r-ggplot2
 conda install -c conda-forge r-gplots
 conda install -c conda-forge r-rcolorbrewer
 conda install -c conda-forge r-VennDiagram
