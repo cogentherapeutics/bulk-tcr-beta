@@ -1,4 +1,4 @@
-# bulk-tcr-beta
+# Analysis workflow for bulk-tcr-beta sequencing data
 Bulk TCR-beta chain sequencing workflow - with DNA as starting material
 
 ### Notion page for detailed documentation
