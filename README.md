@@ -36,15 +36,15 @@ Output files for VDJTools:
 ## Inputs
 
 1) SAMPLSHEET1
-create a tab delimited samplesheet per experiment for input to mixcr as below e.g.samplesheet_EXP21001293.tsv. No headers. Specifiy complete paths to the fastq files
+create a tab delimited samplesheet per experiment for input to mixcr as below e.g.samplesheet_EXP21001293.tsv. No headers. Specifiy complete and *absolute* paths to the fastq files
 ```
-DSCO28-MTC-1    ../data/DSCO28-MTC-1_S7_L001_R1_001.fastq.gz    ../data/DSCO28-MTC-1_S7_L001_R2_001.fastq.gz
-DSCO28-MTC-2    ../data/DSCO28-MTC-2_S1_L001_R1_001.fastq.gz    ../data/DSCO28-MTC-2_S1_L001_R2_001.fastq.gz
-DSCO28-MTC-3    ../data/DSCO28-MTC-3_S3_L001_R1_001.fastq.gz    ../data/DSCO28-MTC-3_S3_L001_R2_001.fastq.gz
-DSCO28-TRF-1    ../data/DSCO28-TRF-1_S6_L001_R1_001.fastq.gz    ../data/DSCO28-TRF-1_S6_L001_R2_001.fastq.gz
-DSCO28-TRF-2    ../data/DSO28-TRF-2_S4_L001_R1_001.fastq.gz    ../data/DSCO28-TRF-2_S4_L001_R2_001.fastq.gz
-DSCO28-TRF-3    ../data/DSCO28-TRF-3_S5_L001_R1_001.fastq.gz    ../data/DSCO28-TRF-3_S5_L001_R2_001.fastq.gz
-FFPE-9G7045 ../data/FFPE-9G7045_S2_L001_R1_001.fastq.gz ../data/FFPE-9G7045_S2_L001_R2_001.fastq.gz
+DSCO28-MTC-1    /data/DSCO28-MTC-1_S7_L001_R1_001.fastq.gz    /data/DSCO28-MTC-1_S7_L001_R2_001.fastq.gz
+DSCO28-MTC-2    /data/DSCO28-MTC-2_S1_L001_R1_001.fastq.gz    /data/DSCO28-MTC-2_S1_L001_R2_001.fastq.gz
+DSCO28-MTC-3    /data/DSCO28-MTC-3_S3_L001_R1_001.fastq.gz    /data/DSCO28-MTC-3_S3_L001_R2_001.fastq.gz
+DSCO28-TRF-1    /data/DSCO28-TRF-1_S6_L001_R1_001.fastq.gz    /data/DSCO28-TRF-1_S6_L001_R2_001.fastq.gz
+DSCO28-TRF-2    /data/DSO28-TRF-2_S4_L001_R1_001.fastq.gz    /data/DSCO28-TRF-2_S4_L001_R2_001.fastq.gz
+DSCO28-TRF-3    /data/DSCO28-TRF-3_S5_L001_R1_001.fastq.gz    /data/DSCO28-TRF-3_S5_L001_R2_001.fastq.gz
+FFPE-9G7045 /data/FFPE-9G7045_S2_L001_R1_001.fastq.gz /data/FFPE-9G7045_S2_L001_R2_001.fastq.gz
 ```
 2) SAMPELSHEET2
 Create another tab delimited samplesheet for preovide mixcr outputs as input to VDJtools as below e.g. metadataToConvert_EXP21001293.txt. Header present. 
