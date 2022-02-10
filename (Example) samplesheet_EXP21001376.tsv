@@ -1,6 +1,6 @@
-HNSCC-15396-1   ../../data/EXP21001376_FFPE/HNSCC-15396-1_S2_L001_R1_001.fastq.gz   ../../data/EXP21001376_FFPE/HNSCC-15396-1_S2_L001_R2_001.fastq.gz
-HNSCC-15396-2   ../../data/EXP21001376_FFPE/HNSCC-15396-2_S4_L001_R1_001.fastq.gz   ../../data/EXP21001376_FFPE/HNSCC-15396-2_S4_L001_R2_001.fastq.gz
-HNSCC-15396-3   ../../data/EXP21001376_FFPE/HNSCC-15396-3_S3_L001_R1_001.fastq.gz   ../../data/EXP21001376_FFPE/HNSCC-15396-3_S3_L001_R2_001.fastq.gz
-HNSCC-6827-1    ../../data/EXP21001376_FFPE/HNSCC-6827-1_S5_L001_R1_001.fastq.gz    ../../data/EXP21001376_FFPE/HNSCC-6827-1_S5_L001_R2_001.fastq.gz
-HNSCC-6827-2    ../../data/EXP21001376_FFPE/HNSCC-6827-2_S6_L001_R1_001.fastq.gz    ../../data/EXP21001376_FFPE/HNSCC-6827-2_S6_L001_R2_001.fastq.gz
-HNSCC-6827-3    ../../data/EXP21001376_FFPE/HNSCC-6827-3_S1_L001_R1_001.fastq.gz    ../../data/EXP21001376_FFPE/HNSCC-6827-3_S1_L001_R2_001.fastq.gz
+HNSCC-15396-1   /mnt/galaxy/home/schavan/projects/bulk_tcr_seq/data/EXP21001376_FFPE/HNSCC-15396-1_S2_L001_R1_001.fastq.gz   /mnt/galaxy/home/schavan/projects/bulk_tcr_seq/data/EXP21001376_FFPE/HNSCC-15396-1_S2_L001_R2_001.fastq.gz
+HNSCC-15396-2   /mnt/galaxy/home/schavan/projects/bulk_tcr_seq/data/EXP21001376_FFPE/HNSCC-15396-2_S4_L001_R1_001.fastq.gz   /mnt/galaxy/home/schavan/projects/bulk_tcr_seq/data/EXP21001376_FFPE/HNSCC-15396-2_S4_L001_R2_001.fastq.gz
+HNSCC-15396-3   /mnt/galaxy/home/schavan/projects/bulk_tcr_seq/data/EXP21001376_FFPE/HNSCC-15396-3_S3_L001_R1_001.fastq.gz   /mnt/galaxy/home/schavan/projects/bulk_tcr_seq/data/EXP21001376_FFPE/HNSCC-15396-3_S3_L001_R2_001.fastq.gz
+HNSCC-6827-1    /mnt/galaxy/home/schavan/projects/bulk_tcr_seq/data/EXP21001376_FFPE/HNSCC-6827-1_S5_L001_R1_001.fastq.gz    /mnt/galaxy/home/schavan/projects/bulk_tcr_seq/data/EXP21001376_FFPE/HNSCC-6827-1_S5_L001_R2_001.fastq.gz
+HNSCC-6827-2    /mnt/galaxy/home/schavan/projects/bulk_tcr_seq/data/EXP21001376_FFPE/HNSCC-6827-2_S6_L001_R1_001.fastq.gz    /mnt/galaxy/home/schavan/projects/bulk_tcr_seq/data/EXP21001376_FFPE/HNSCC-6827-2_S6_L001_R2_001.fastq.gz
+HNSCC-6827-3    /mnt/galaxy/home/schavan/projects/bulk_tcr_seq/data/EXP21001376_FFPE/HNSCC-6827-3_S1_L001_R1_001.fastq.gz    /mnt/galaxy/home/schavan/projects/bulk_tcr_seq/data/EXP21001376_FFPE/HNSCC-6827-3_S1_L001_R2_001.fastq.gz
