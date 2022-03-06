@@ -1,9 +1,6 @@
 # Analysis workflow for bulk-tcr-beta sequencing data
 Bulk TCR-beta chain sequencing workflow - with DNA as starting material
 
-### Notion page for detailed documentation
-https://www.notion.so/cogen/Running-Bulk-TCR-Sequencing-pipeline-for-translational-lab-members-5bb8a7eb89b04ea68ab601a8e8c7bbab
-
 This includes below steps and scripts
 
 1) fastp - QC and pre-processing of fastq files/ multiqc to create a multisample report: `run_fastp_multiqc.sh`
@@ -116,3 +113,46 @@ Overall for more understanding read
 1) [https://docs.anaconda.com/anaconda/user-guide/tasks/using-r-language/](https://docs.anaconda.com/anaconda/user-guide/tasks/using-r-language/) 
 
 2) [https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-with-commands](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-with-commands)
+
+## Extra Info
+https://[milaboratory.com](http://milaboratory.com) Pirogov Russian National Research Medical University, Moscow, Russia
+
+1. **MiXCR** [https://mixcr.readthedocs.io/en/master/](https://mixcr.readthedocs.io/en/master/) Java
+a. Align raw sequencing reads to reference V, D, J, and C genes of TCRs
+b. Assemble clonotypes using alignments based on the region of interest (CDR3)
+c. Export alignments & clones to human-readable format
+
+2. **VDJtools** (post-analysis) [https://vdjtools-doc.readthedocs.io/en/master/](https://vdjtools-doc.readthedocs.io/en/master/) Java/R
+a. Computes a wide set of statistics
+b. Perform various forms of cross-sample analysis
+
+VDJtools clonotype specification
+1. Count: Number of reads
+2. Frequency: the share of clonotype in the sample
+3. Complementarity determining region 3 nucleotide sequence (CDR3nt). 
+	CDR3 starts with Variable region reference point (conserved Cys residue)
+	and ends with Joining segment reference point (conserved PheTrp)
+4. Translated CDR3 sequence (CDR3aa)
+5. Variable (V) segment name.
+6. Diversity (D) segment name for the receptor chains (TRB)
+7. Joining (J) segment name.
+8. Vend, Dstart, Dend, and Jstart
+	marking V, D and J segment boundaries within CDR3 nucleotide sequence 
+	(inclusive)
+
+### **Analysis workflow setup**
+
+1. Turn on VPN, Cisco AnyConnect
+2. Log on to galaxy server ([10.0.31.135](mailto:schavan@10.0.31.135)), create directories in your home folder -
+inputs, data, scripts
+3. Check installations and versions
+which mixcr
+/usr/local/bin/mixcr
+which vdjtools
+/usr/local/bin/vdjtools
+mixcr --version
+MiXCR v3.0.13
+vdjtools --version
+VDJtools V1.2.1
+4. Transfer fastq files for a given experiment e.g. EXP21001293 from Illumina → local machine (Install Illumina BaseSpace Downloader on your local machine). Then transfer from local machine → galaxy server (10.0.31.135)
+rsync -r -e ssh <local-path-to-fastq> user@10.0.31.135:~/projects/bulk_tcr_seq/data/EXP21001293
