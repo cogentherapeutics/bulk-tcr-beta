@@ -27,12 +27,9 @@ echo "Running fastp--->"$SAMPLE
 #Before trimming
     fastqc ${FASTQ1} ${FASTQ2}
 #After trimming
-    fastqc ${SAMPLE}.merged.trimmed.R1.fastq.gz ${SAMPLE}.merged.trimmed.R2.fastq.gz
-
-#Run MultiQC
-    echo "Running MultiQC--->"
-    multiqc $OUT_DIR
-    
+    fastqc ${SAMPLE}.merged.trimmed.R1.fastq.gz ${SAMPLE}.merged.trimmed.R2.fastq.gz  
 done < $SAMPLESHEET1
 
-multiqc $QCFOLDER
+#Run MultiQC #Needs to be outside the loop
+    echo "Running MultiQC--->"
+    multiqc $OUT_DIR
