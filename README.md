@@ -13,11 +13,11 @@ Currently fastp, multiqc, mixcr and vdjtools are installed on the galaxy server.
 INFO for a test run:
 ```
 Test data:
-~schavan/projects/bulk_tcr_seq/data/EXP21001376_FFPE`
+s3://seqcore/fastqs/tcrseq/EXP21001376_FFPE
 
 Input files:
-~schavan/projects/bulk_tcr_seq/inputs/samplesheet_EXP21001376.tsv
-~schavan/projects/bulk_tcr_seq/inputs/metadataToConvert_EXP21001376_FFPE.txt
+~~schavan/projects/bulk_tcr_seq/inputs_trb/samplesheet_EXP21001376.tsv ## Mixcr + fastq only
+~schavan/projects/bulk_tcr_seq/inputs/metadataToConvert_EXP21001376_FFPE.txt. ## VDJTools Only
 
 Output files for Mixcr:
 ~schavan/projects/bulk_tcr_seq/inputs/
