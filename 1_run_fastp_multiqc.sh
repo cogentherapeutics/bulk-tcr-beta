@@ -21,8 +21,8 @@ echo "Running fastp--->"$SAMPLE
     fastp -h $OUT_DIR/${SAMPLE}_fastp.html -j $OUT_DIR/${SAMPLE}_fastp.json \
     -i ${OUT_DIR}/${SAMPLE}.merged.R1.fastq.gz -I ${OUT_DIR}/${SAMPLE}.merged.R2.fastq.gz \
     -o ${OUT_DIR}/${SAMPLE}.merged.trimmed.R1.fastq.gz -O ${OUT_DIR}/${SAMPLE}.merged.trimmed.R2.fastq.gz \
-    --dedup --cut_front --cut_tail_window_size --cut_tail --cut_front_window_size \
-    --n_base_limit --length_required 40 --low_complexity_filter --overrepresentation_analysis
+    --cut_front --cut_tail_window_size 4 --cut_tail --cut_front_window_size 4 \
+    --n_base_limit 5 --length_required 40 --low_complexity_filter --overrepresentation_analysis
 
 #Before trimming
     fastqc ${FASTQ1} ${FASTQ2}
